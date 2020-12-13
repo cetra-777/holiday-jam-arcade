@@ -1427,171 +1427,6 @@
                                                     "children": {
                                                         "true": [
                                                             {
-                                                                "id": "d90661df-b754-467d-9f04-5ca67f362621",
-                                                                "command": "EVENT_IF_VALUE",
-                                                                "args": {
-                                                                    "variable": "1",
-                                                                    "operator": "==",
-                                                                    "comparator": 1,
-                                                                    "__collapseElse": false,
-                                                                    "__collapse": true
-                                                                },
-                                                                "children": {
-                                                                    "true": [
-                                                                        {
-                                                                            "id": "9ac87794-1720-4045-aae5-4070d3f7c773",
-                                                                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                                                                            "args": {
-                                                                                "actorId": "0",
-                                                                                "speed": 0
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "50957ab4-ddf4-4bc0-831e-46af702c544a",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ],
-                                                                    "false": [
-                                                                        {
-                                                                            "id": "d9d0b691-50f2-48fd-9d12-7ef88a3785e1",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "6b296780-5bdc-4c2b-a2bc-fd78f593467d",
-                                                                "command": "EVENT_IF_VALUE",
-                                                                "args": {
-                                                                    "variable": "1",
-                                                                    "operator": "==",
-                                                                    "comparator": 2,
-                                                                    "__collapseElse": false,
-                                                                    "__collapse": true
-                                                                },
-                                                                "children": {
-                                                                    "true": [
-                                                                        {
-                                                                            "id": "bcea169c-10d8-4243-97d7-c49c1aa9c33e",
-                                                                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                                                                            "args": {
-                                                                                "actorId": "0",
-                                                                                "speed": 1
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "9b72ae5f-c0bb-4da9-90b1-c475388fcf50",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ],
-                                                                    "false": [
-                                                                        {
-                                                                            "id": "87a4215e-8b91-4472-ad63-cac6cba801a9",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "bee4f7ae-3ecb-466d-91f0-39ebb741f891",
-                                                                "command": "EVENT_IF_VALUE",
-                                                                "args": {
-                                                                    "variable": "1",
-                                                                    "operator": "==",
-                                                                    "comparator": 3,
-                                                                    "__collapseElse": false,
-                                                                    "__collapse": true
-                                                                },
-                                                                "children": {
-                                                                    "true": [
-                                                                        {
-                                                                            "id": "a7b88073-ae0f-4d61-9e68-44e5d7bb3942",
-                                                                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                                                                            "args": {
-                                                                                "actorId": "0",
-                                                                                "speed": 2
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "f7076353-6138-4bc9-9bd6-daf7fafc1666",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ],
-                                                                    "false": [
-                                                                        {
-                                                                            "id": "de2eb352-30a2-445e-889c-7c9bea0799c0",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "136b8c03-8411-4869-bc47-79bf09ad4b3d",
-                                                                "command": "EVENT_IF_VALUE",
-                                                                "args": {
-                                                                    "variable": "1",
-                                                                    "operator": "==",
-                                                                    "comparator": 4,
-                                                                    "__collapseElse": false,
-                                                                    "__collapse": true
-                                                                },
-                                                                "children": {
-                                                                    "true": [
-                                                                        {
-                                                                            "id": "e90895de-4302-4226-8527-9e0ff764d612",
-                                                                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                                                                            "args": {
-                                                                                "actorId": "0",
-                                                                                "speed": 3
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "424a3c43-840a-480d-bed7-5f86d9c686f1",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ],
-                                                                    "false": [
-                                                                        {
-                                                                            "id": "0e1d85ce-0f2b-4732-aba0-6557054ab512",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "67992787-6c91-4ab2-b481-ea866852f451",
-                                                                "command": "EVENT_IF_VALUE",
-                                                                "args": {
-                                                                    "variable": "1",
-                                                                    "operator": "==",
-                                                                    "comparator": 5,
-                                                                    "__collapseElse": false,
-                                                                    "__collapse": true
-                                                                },
-                                                                "children": {
-                                                                    "true": [
-                                                                        {
-                                                                            "id": "fc6e938d-976c-426c-b74f-8edf62819dc9",
-                                                                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                                                                            "args": {
-                                                                                "actorId": "0",
-                                                                                "speed": 4
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "2d1af4e8-6add-40d3-b97d-5735ae95eb01",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ],
-                                                                    "false": [
-                                                                        {
-                                                                            "id": "8e287598-3d73-4438-acb4-3571e1d9bd1d",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            },
-                                                            {
                                                                 "id": "d41432c8-0ab5-4475-8689-392be7e3734d",
                                                                 "command": "EVENT_ACTOR_SET_DIRECTION",
                                                                 "args": {
@@ -1599,8 +1434,7 @@
                                                                     "direction": {
                                                                         "type": "direction",
                                                                         "value": "right"
-                                                                    },
-                                                                    "__collapse": true
+                                                                    }
                                                                 }
                                                             },
                                                             {
@@ -1626,20 +1460,6 @@
                                                                 "command": "EVENT_WAIT",
                                                                 "args": {
                                                                     "time": 1
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "ff2da723-23be-43e0-9ad1-5ad74803e900",
-                                                                "command": "EVENT_VARIABLE_MATH",
-                                                                "args": {
-                                                                    "vectorX": "1",
-                                                                    "operation": "set",
-                                                                    "other": "rnd",
-                                                                    "vectorY": "0",
-                                                                    "value": "1",
-                                                                    "minValue": 1,
-                                                                    "maxValue": 5,
-                                                                    "clamp": false
                                                                 }
                                                             },
                                                             {
@@ -1716,20 +1536,6 @@
                                                                 "command": "EVENT_WAIT",
                                                                 "args": {
                                                                     "time": 1
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "5aa733ad-7f71-47fe-b8a4-fa4fe52bbf0a",
-                                                                "command": "EVENT_VARIABLE_MATH",
-                                                                "args": {
-                                                                    "vectorX": "1",
-                                                                    "operation": "set",
-                                                                    "other": "rnd",
-                                                                    "vectorY": "0",
-                                                                    "value": "1",
-                                                                    "minValue": 1,
-                                                                    "maxValue": 5,
-                                                                    "clamp": false
                                                                 }
                                                             },
                                                             {
@@ -1838,171 +1644,6 @@
                                                     "children": {
                                                         "true": [
                                                             {
-                                                                "id": "d90661df-b754-467d-9f04-5ca67f362621",
-                                                                "command": "EVENT_IF_VALUE",
-                                                                "args": {
-                                                                    "variable": "1",
-                                                                    "operator": "==",
-                                                                    "comparator": 1,
-                                                                    "__collapseElse": false,
-                                                                    "__collapse": true
-                                                                },
-                                                                "children": {
-                                                                    "true": [
-                                                                        {
-                                                                            "id": "9ac87794-1720-4045-aae5-4070d3f7c773",
-                                                                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                                                                            "args": {
-                                                                                "actorId": "0",
-                                                                                "speed": 0
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "50957ab4-ddf4-4bc0-831e-46af702c544a",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ],
-                                                                    "false": [
-                                                                        {
-                                                                            "id": "d9d0b691-50f2-48fd-9d12-7ef88a3785e1",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "6b296780-5bdc-4c2b-a2bc-fd78f593467d",
-                                                                "command": "EVENT_IF_VALUE",
-                                                                "args": {
-                                                                    "variable": "1",
-                                                                    "operator": "==",
-                                                                    "comparator": 2,
-                                                                    "__collapseElse": false,
-                                                                    "__collapse": true
-                                                                },
-                                                                "children": {
-                                                                    "true": [
-                                                                        {
-                                                                            "id": "bcea169c-10d8-4243-97d7-c49c1aa9c33e",
-                                                                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                                                                            "args": {
-                                                                                "actorId": "0",
-                                                                                "speed": 1
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "9b72ae5f-c0bb-4da9-90b1-c475388fcf50",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ],
-                                                                    "false": [
-                                                                        {
-                                                                            "id": "87a4215e-8b91-4472-ad63-cac6cba801a9",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "bee4f7ae-3ecb-466d-91f0-39ebb741f891",
-                                                                "command": "EVENT_IF_VALUE",
-                                                                "args": {
-                                                                    "variable": "1",
-                                                                    "operator": "==",
-                                                                    "comparator": 3,
-                                                                    "__collapseElse": false,
-                                                                    "__collapse": true
-                                                                },
-                                                                "children": {
-                                                                    "true": [
-                                                                        {
-                                                                            "id": "a7b88073-ae0f-4d61-9e68-44e5d7bb3942",
-                                                                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                                                                            "args": {
-                                                                                "actorId": "0",
-                                                                                "speed": 2
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "f7076353-6138-4bc9-9bd6-daf7fafc1666",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ],
-                                                                    "false": [
-                                                                        {
-                                                                            "id": "de2eb352-30a2-445e-889c-7c9bea0799c0",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "136b8c03-8411-4869-bc47-79bf09ad4b3d",
-                                                                "command": "EVENT_IF_VALUE",
-                                                                "args": {
-                                                                    "variable": "1",
-                                                                    "operator": "==",
-                                                                    "comparator": 4,
-                                                                    "__collapseElse": false,
-                                                                    "__collapse": true
-                                                                },
-                                                                "children": {
-                                                                    "true": [
-                                                                        {
-                                                                            "id": "e90895de-4302-4226-8527-9e0ff764d612",
-                                                                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                                                                            "args": {
-                                                                                "actorId": "0",
-                                                                                "speed": 3
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "424a3c43-840a-480d-bed7-5f86d9c686f1",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ],
-                                                                    "false": [
-                                                                        {
-                                                                            "id": "0e1d85ce-0f2b-4732-aba0-6557054ab512",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "67992787-6c91-4ab2-b481-ea866852f451",
-                                                                "command": "EVENT_IF_VALUE",
-                                                                "args": {
-                                                                    "variable": "1",
-                                                                    "operator": "==",
-                                                                    "comparator": 5,
-                                                                    "__collapseElse": false,
-                                                                    "__collapse": true
-                                                                },
-                                                                "children": {
-                                                                    "true": [
-                                                                        {
-                                                                            "id": "fc6e938d-976c-426c-b74f-8edf62819dc9",
-                                                                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                                                                            "args": {
-                                                                                "actorId": "0",
-                                                                                "speed": 4
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "2d1af4e8-6add-40d3-b97d-5735ae95eb01",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ],
-                                                                    "false": [
-                                                                        {
-                                                                            "id": "8e287598-3d73-4438-acb4-3571e1d9bd1d",
-                                                                            "command": "EVENT_END"
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            },
-                                                            {
                                                                 "id": "d41432c8-0ab5-4475-8689-392be7e3734d",
                                                                 "command": "EVENT_ACTOR_SET_DIRECTION",
                                                                 "args": {
@@ -2010,8 +1651,7 @@
                                                                     "direction": {
                                                                         "type": "direction",
                                                                         "value": "right"
-                                                                    },
-                                                                    "__collapse": true
+                                                                    }
                                                                 }
                                                             },
                                                             {
@@ -2037,20 +1677,6 @@
                                                                 "command": "EVENT_WAIT",
                                                                 "args": {
                                                                     "time": 1
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "ff2da723-23be-43e0-9ad1-5ad74803e900",
-                                                                "command": "EVENT_VARIABLE_MATH",
-                                                                "args": {
-                                                                    "vectorX": "1",
-                                                                    "operation": "set",
-                                                                    "other": "rnd",
-                                                                    "vectorY": "0",
-                                                                    "value": "1",
-                                                                    "minValue": 1,
-                                                                    "maxValue": 5,
-                                                                    "clamp": false
                                                                 }
                                                             },
                                                             {
@@ -2127,20 +1753,6 @@
                                                                 "command": "EVENT_WAIT",
                                                                 "args": {
                                                                     "time": 1
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "5aa733ad-7f71-47fe-b8a4-fa4fe52bbf0a",
-                                                                "command": "EVENT_VARIABLE_MATH",
-                                                                "args": {
-                                                                    "vectorX": "1",
-                                                                    "operation": "set",
-                                                                    "other": "rnd",
-                                                                    "vectorY": "0",
-                                                                    "value": "1",
-                                                                    "minValue": 1,
-                                                                    "maxValue": 5,
-                                                                    "clamp": false
                                                                 }
                                                             },
                                                             {
@@ -2614,10 +2226,6 @@
                 "0": {
                     "id": "0",
                     "name": "Variable A"
-                },
-                "1": {
-                    "id": "1",
-                    "name": "Variable B"
                 }
             },
             "actors": {
@@ -2652,171 +2260,6 @@
                                 "children": {
                                     "true": [
                                         {
-                                            "id": "d90661df-b754-467d-9f04-5ca67f362621",
-                                            "command": "EVENT_IF_VALUE",
-                                            "args": {
-                                                "variable": "1",
-                                                "operator": "==",
-                                                "comparator": 1,
-                                                "__collapseElse": false,
-                                                "__collapse": true
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "id": "9ac87794-1720-4045-aae5-4070d3f7c773",
-                                                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                                                        "args": {
-                                                            "actorId": "0",
-                                                            "speed": 0
-                                                        }
-                                                    },
-                                                    {
-                                                        "id": "50957ab4-ddf4-4bc0-831e-46af702c544a",
-                                                        "command": "EVENT_END"
-                                                    }
-                                                ],
-                                                "false": [
-                                                    {
-                                                        "id": "d9d0b691-50f2-48fd-9d12-7ef88a3785e1",
-                                                        "command": "EVENT_END"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "id": "6b296780-5bdc-4c2b-a2bc-fd78f593467d",
-                                            "command": "EVENT_IF_VALUE",
-                                            "args": {
-                                                "variable": "1",
-                                                "operator": "==",
-                                                "comparator": 2,
-                                                "__collapseElse": false,
-                                                "__collapse": true
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "id": "bcea169c-10d8-4243-97d7-c49c1aa9c33e",
-                                                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                                                        "args": {
-                                                            "actorId": "0",
-                                                            "speed": 1
-                                                        }
-                                                    },
-                                                    {
-                                                        "id": "9b72ae5f-c0bb-4da9-90b1-c475388fcf50",
-                                                        "command": "EVENT_END"
-                                                    }
-                                                ],
-                                                "false": [
-                                                    {
-                                                        "id": "87a4215e-8b91-4472-ad63-cac6cba801a9",
-                                                        "command": "EVENT_END"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "id": "bee4f7ae-3ecb-466d-91f0-39ebb741f891",
-                                            "command": "EVENT_IF_VALUE",
-                                            "args": {
-                                                "variable": "1",
-                                                "operator": "==",
-                                                "comparator": 3,
-                                                "__collapseElse": false,
-                                                "__collapse": true
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "id": "a7b88073-ae0f-4d61-9e68-44e5d7bb3942",
-                                                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                                                        "args": {
-                                                            "actorId": "0",
-                                                            "speed": 2
-                                                        }
-                                                    },
-                                                    {
-                                                        "id": "f7076353-6138-4bc9-9bd6-daf7fafc1666",
-                                                        "command": "EVENT_END"
-                                                    }
-                                                ],
-                                                "false": [
-                                                    {
-                                                        "id": "de2eb352-30a2-445e-889c-7c9bea0799c0",
-                                                        "command": "EVENT_END"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "id": "136b8c03-8411-4869-bc47-79bf09ad4b3d",
-                                            "command": "EVENT_IF_VALUE",
-                                            "args": {
-                                                "variable": "1",
-                                                "operator": "==",
-                                                "comparator": 4,
-                                                "__collapseElse": false,
-                                                "__collapse": true
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "id": "e90895de-4302-4226-8527-9e0ff764d612",
-                                                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                                                        "args": {
-                                                            "actorId": "0",
-                                                            "speed": 3
-                                                        }
-                                                    },
-                                                    {
-                                                        "id": "424a3c43-840a-480d-bed7-5f86d9c686f1",
-                                                        "command": "EVENT_END"
-                                                    }
-                                                ],
-                                                "false": [
-                                                    {
-                                                        "id": "0e1d85ce-0f2b-4732-aba0-6557054ab512",
-                                                        "command": "EVENT_END"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "id": "67992787-6c91-4ab2-b481-ea866852f451",
-                                            "command": "EVENT_IF_VALUE",
-                                            "args": {
-                                                "variable": "1",
-                                                "operator": "==",
-                                                "comparator": 5,
-                                                "__collapseElse": false,
-                                                "__collapse": true
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "id": "fc6e938d-976c-426c-b74f-8edf62819dc9",
-                                                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
-                                                        "args": {
-                                                            "actorId": "0",
-                                                            "speed": 4
-                                                        }
-                                                    },
-                                                    {
-                                                        "id": "2d1af4e8-6add-40d3-b97d-5735ae95eb01",
-                                                        "command": "EVENT_END"
-                                                    }
-                                                ],
-                                                "false": [
-                                                    {
-                                                        "id": "8e287598-3d73-4438-acb4-3571e1d9bd1d",
-                                                        "command": "EVENT_END"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
                                             "id": "d41432c8-0ab5-4475-8689-392be7e3734d",
                                             "command": "EVENT_ACTOR_SET_DIRECTION",
                                             "args": {
@@ -2824,8 +2267,7 @@
                                                 "direction": {
                                                     "type": "direction",
                                                     "value": "right"
-                                                },
-                                                "__collapse": true
+                                                }
                                             }
                                         },
                                         {
@@ -2851,20 +2293,6 @@
                                             "command": "EVENT_WAIT",
                                             "args": {
                                                 "time": 1
-                                            }
-                                        },
-                                        {
-                                            "id": "ff2da723-23be-43e0-9ad1-5ad74803e900",
-                                            "command": "EVENT_VARIABLE_MATH",
-                                            "args": {
-                                                "vectorX": "1",
-                                                "operation": "set",
-                                                "other": "rnd",
-                                                "vectorY": "0",
-                                                "value": "1",
-                                                "minValue": 1,
-                                                "maxValue": 5,
-                                                "clamp": false
                                             }
                                         },
                                         {
@@ -2941,20 +2369,6 @@
                                             "command": "EVENT_WAIT",
                                             "args": {
                                                 "time": 1
-                                            }
-                                        },
-                                        {
-                                            "id": "5aa733ad-7f71-47fe-b8a4-fa4fe52bbf0a",
-                                            "command": "EVENT_VARIABLE_MATH",
-                                            "args": {
-                                                "vectorX": "1",
-                                                "operation": "set",
-                                                "other": "rnd",
-                                                "vectorY": "0",
-                                                "value": "1",
-                                                "minValue": 1,
-                                                "maxValue": 5,
-                                                "clamp": false
                                             }
                                         },
                                         {
@@ -3049,7 +2463,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 1217,
-        "worldScrollY": 428,
+        "worldScrollY": 228,
         "zoom": 300,
         "customColorsEnabled": true,
         "customHead": "",
