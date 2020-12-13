@@ -25,7 +25,20 @@
                     "id": "e0f6c83b-9e8e-4008-ae74-104eff1181f5",
                     "command": "EVENT_SET_FALSE",
                     "args": {
-                        "variable": "4"
+                        "variable": "4",
+                        "__collapse": true
+                    }
+                },
+                {
+                    "id": "bb4f08ee-3dcd-41c5-b164-7ff1c0cb8b4b",
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "2",
+                        "value": {
+                            "type": "number",
+                            "value": 0
+                        },
+                        "__collapse": true
                     }
                 },
                 {
@@ -96,6 +109,17 @@
                     }
                 },
                 {
+                    "id": "a59c5152-c66c-428b-bdac-b9d56453b060",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Use 'a' to\nmove forward one\nstep.",
+                            "Cross as many\nstreets as you\ncan!"
+                        ],
+                        "avatarId": ""
+                    }
+                },
+                {
                     "id": "d56047ba-4d0e-445c-8340-27e8d677e6f3",
                     "command": "EVENT_END"
                 }
@@ -123,7 +147,8 @@
                     "args": {
                         "text": [
                             "Grandma got run\ndown by the\nreindeer.",
-                            "You crossed the\nroad $02$ times."
+                            "Gma crossed the\nroad $02$ times.",
+                            "The high score is\n$03$."
                         ],
                         "avatarId": "",
                         "__collapse": false
@@ -137,7 +162,7 @@
                         "operator": ">",
                         "vectorY": "3",
                         "__collapseElse": false,
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -146,7 +171,7 @@
                                 "command": "EVENT_TEXT",
                                 "args": {
                                     "text": [
-                                        "New High score!\n"
+                                        "Its a new high\nscore!"
                                     ],
                                     "avatarId": ""
                                 }
@@ -3522,19 +3547,7 @@
                                         "command": "EVENT_INC_VALUE",
                                         "args": {
                                             "variable": "2",
-                                            "__collapse": true
-                                        }
-                                    },
-                                    {
-                                        "id": "ee8b881a-33f8-43d4-8261-6ef671a5bd87",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Made it across\n$02$\ntimes.",
-                                                "Keep going for a\nhigh score!"
-                                            ],
-                                            "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -3550,7 +3563,7 @@
                                                 "type": "number",
                                                 "value": 21
                                             },
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -3574,6 +3587,33 @@
                     "id": "9338e5d6-ce26-4afa-9282-38cec0d97c6e",
                     "x": 8,
                     "y": 9,
+                    "width": 2,
+                    "height": 1
+                },
+                {
+                    "name": "",
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "cdfd52de-eb08-4111-873b-e625e7e44f2e",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Gma has crossed\n$02$\nroads.",
+                                    "The current high\nscore is $03$."
+                                ],
+                                "avatarId": "",
+                                "__collapse": false
+                            }
+                        },
+                        {
+                            "id": "63327b97-8bd2-4089-aceb-d70bcf7d8ff8",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "id": "b67a8cca-d71f-48a4-af39-ebb0475fdffd",
+                    "x": 8,
+                    "y": 21,
                     "width": 2,
                     "height": 1
                 }
@@ -6162,26 +6202,23 @@
             ],
             "script": [
                 {
-                    "id": "aefc459f-a75f-4b53-9f2d-bc5524aa38c9",
-                    "command": "EVENT_PLAYER_SET_SPRITE",
+                    "id": "bfea2573-92c5-485c-ac45-8693195ff7e3",
+                    "command": "EVENT_ACTOR_HIDE",
                     "args": {
-                        "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
-                        "persist": false,
+                        "actorId": "baae5a99-9ad4-4ed3-a7f2-fd4dc92d313d",
                         "__collapse": true
                     }
                 },
                 {
-                    "id": "9078d84e-0fd2-4a46-b143-4a781fd3f224",
-                    "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                    "id": "89a7f8f6-91e1-4244-8739-ee729afe8eba",
+                    "command": "EVENT_TEXT",
                     "args": {
-                        "actorId": "$self$"
-                    }
-                },
-                {
-                    "id": "bfea2573-92c5-485c-ac45-8693195ff7e3",
-                    "command": "EVENT_ACTOR_HIDE",
-                    "args": {
-                        "actorId": "baae5a99-9ad4-4ed3-a7f2-fd4dc92d313d"
+                        "text": [
+                            "Tap a tile with\n'a' to swap it\nwith the blank.",
+                            "Reveal the picture\nto win!"
+                        ],
+                        "avatarId": "",
+                        "__collapse": true
                     }
                 },
                 {
@@ -7136,7 +7173,7 @@
             "backgroundId": "1c4f297e-f86c-4699-bf92-a38bebeed7e0",
             "width": 20,
             "height": 18,
-            "type": "0",
+            "type": "1",
             "paletteIds": [],
             "collisions": [],
             "tileColors": [],
@@ -7892,6 +7929,17 @@
                     }
                 },
                 {
+                    "id": "a1bf7746-b0c1-404e-96f3-7972aa215e1f",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Tap a tile with\n'a' to swap it\nwith the blank.",
+                            "Reveal the picture\nto win!"
+                        ],
+                        "avatarId": ""
+                    }
+                },
+                {
                     "id": "569d7091-a6cc-482f-a484-e95e6f5479b7",
                     "command": "EVENT_END"
                 }
@@ -7900,8 +7948,8 @@
             "playerHit2Script": [],
             "playerHit3Script": [],
             "id": "4291c931-d59b-433c-97f2-48166b76bcf7",
-            "x": 496.53332519531233,
-            "y": 430.13333740234367,
+            "x": 498.2476109095981,
+            "y": 436.99048025948656,
             "actors": [
                 {
                     "name": "",
@@ -8847,8 +8895,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "chooseGame.png",
-            "inode": "6473924464566579",
-            "_v": 1607868078154
+            "inode": "562949954486461",
+            "_v": 1607872678885
         },
         {
             "id": "8fadf3d0-1383-4657-a943-e0e01218e7c3",
@@ -8858,8 +8906,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "logo.png",
-            "inode": "10414574138304865",
-            "_v": 1607868078154
+            "inode": "562949954486462",
+            "_v": 1607872678885
         },
         {
             "id": "424b8158-5f50-4145-a196-16fea7aa2953",
@@ -8869,8 +8917,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "madeWithGbStudio.png",
-            "inode": "26177172834105612",
-            "_v": 1607868078154
+            "inode": "562949954486463",
+            "_v": 1607872678885
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -8880,8 +8928,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "placeholder.png",
-            "inode": "4503599627577459",
-            "_v": 1607868078180
+            "inode": "562949954486342",
+            "_v": 1607872678885
         },
         {
             "id": "1b6a59fd-a7ec-4458-b554-49aed23de25a",
@@ -8891,8 +8939,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "puzzle-background.png",
-            "inode": "3940649674170871",
-            "_v": 1607868078154
+            "inode": "562949954486464",
+            "_v": 1607872678885
         },
         {
             "id": "d47129b1-58df-4a55-aa92-2449b7a50e8a",
@@ -8902,8 +8950,8 @@
             "imageWidth": 160,
             "imageHeight": 192,
             "filename": "road.png",
-            "inode": "3940649674156148",
-            "_v": 1607868078154
+            "inode": "6192449488333330",
+            "_v": 1607872678885
         },
         {
             "id": "5a590d5a-0ca5-4f79-9a6d-15b6a49c70e2",
@@ -8913,8 +8961,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "title.png",
-            "inode": "6755399441277113",
-            "_v": 1607868078154
+            "inode": "562949954486465",
+            "_v": 1607872678885
         }
     ],
     "spriteSheets": [
@@ -8924,8 +8972,8 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
-            "inode": "3940649674156152",
-            "_v": 1607868078154
+            "inode": "562949954486346",
+            "_v": 1607872678892
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -8933,8 +8981,8 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
-            "inode": "4222124650866809",
-            "_v": 1607868078154
+            "inode": "562949954486347",
+            "_v": 1607872678892
         },
         {
             "id": "e6ed6f0d-4783-4497-bedf-f185c462bbfa",
@@ -8942,8 +8990,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "b1.png",
-            "inode": "2533274790617496",
-            "_v": 1607868078154
+            "inode": "562949954486466",
+            "_v": 1607872678885
         },
         {
             "id": "39dbedcc-ab0c-443a-b9d3-6b33270780f8",
@@ -8951,8 +8999,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "b2.png",
-            "inode": "5066549581013335",
-            "_v": 1607868078154
+            "inode": "562949954486467",
+            "_v": 1607872678886
         },
         {
             "id": "510ecb73-3dbd-42bc-8157-e1a7f216cb27",
@@ -8960,8 +9008,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "blank.png",
-            "inode": "4785074604302804",
-            "_v": 1607868078154
+            "inode": "562949954486468",
+            "_v": 1607872678892
         },
         {
             "id": "97033671-50f8-4a4a-8cdd-51d5be2b8d46",
@@ -8969,8 +9017,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "candy-cane.png",
-            "inode": "3940649674156154",
-            "_v": 1607868078154
+            "inode": "562949954486401",
+            "_v": 1607872678892
         },
         {
             "id": "c3ec6eea-b5e7-4beb-9548-0fb1d17d1ad8",
@@ -8978,8 +9026,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "db1.png",
-            "inode": "6755399441277516",
-            "_v": 1607868078154
+            "inode": "562949954486469",
+            "_v": 1607872678892
         },
         {
             "id": "af7ac4af-87e5-451b-96a2-7c2fb5eea54b",
@@ -8987,8 +9035,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "db2.png",
-            "inode": "3940649674170998",
-            "_v": 1607868078154
+            "inode": "562949954486470",
+            "_v": 1607872678892
         },
         {
             "id": "1f435b66-e68a-44cb-b662-d9ffd44a8899",
@@ -8996,8 +9044,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "dblank.png",
-            "inode": "7881299348120184",
-            "_v": 1607868078154
+            "inode": "562949954486471",
+            "_v": 1607872678892
         },
         {
             "id": "20257f4b-49b6-49f3-887f-54eaa2a87afd",
@@ -9005,8 +9053,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "dm1.png",
-            "inode": "3377699720749638",
-            "_v": 1607868078154
+            "inode": "562949954486472",
+            "_v": 1607872678892
         },
         {
             "id": "c9bffaf0-3233-4445-b040-1ff27611d776",
@@ -9014,8 +9062,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "dm2.png",
-            "inode": "5066549581013534",
-            "_v": 1607868078154
+            "inode": "562949954486473",
+            "_v": 1607872678892
         },
         {
             "id": "a86ecfe6-ac08-4efb-89fe-34882a7b0e48",
@@ -9023,8 +9071,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "dm3.png",
-            "inode": "5629499534434890",
-            "_v": 1607868078154
+            "inode": "562949954486474",
+            "_v": 1607872678892
         },
         {
             "id": "bceed23c-27cc-4d19-b4d5-d34ec1ee1e13",
@@ -9032,8 +9080,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "dt1.png",
-            "inode": "3096224744038956",
-            "_v": 1607868078154
+            "inode": "562949954486475",
+            "_v": 1607872678892
         },
         {
             "id": "87831657-72e1-4b16-a42b-c57a9d253b4c",
@@ -9041,8 +9089,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "dt2.png",
-            "inode": "5348024557724206",
-            "_v": 1607868078154
+            "inode": "562949954486476",
+            "_v": 1607872678892
         },
         {
             "id": "4ae97a94-fafb-480b-acb4-0aab9fb0099b",
@@ -9050,8 +9098,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "dt3.png",
-            "inode": "2814749767328306",
-            "_v": 1607868078154
+            "inode": "562949954486477",
+            "_v": 1607872678892
         },
         {
             "id": "14b741ca-ceb6-4473-9d1e-a6ce8936e3ad",
@@ -9059,8 +9107,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "m1.png",
-            "inode": "5348024557723992",
-            "_v": 1607868078154
+            "inode": "562949954486478",
+            "_v": 1607872678892
         },
         {
             "id": "49fb9ff4-49a3-486a-9ed1-72f34430a806",
@@ -9068,8 +9116,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "m2.png",
-            "inode": "6192449487855947",
-            "_v": 1607868078154
+            "inode": "562949954486479",
+            "_v": 1607872678892
         },
         {
             "id": "e0ca5b56-dd19-4e70-bb88-51c75d55f36e",
@@ -9077,8 +9125,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "m3.png",
-            "inode": "5066549581013341",
-            "_v": 1607868078154
+            "inode": "562949954486480",
+            "_v": 1607872678892
         },
         {
             "id": "c15627d6-bbfc-4b10-a987-548d617a4959",
@@ -9086,8 +9134,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "menorah.png",
-            "inode": "4222124650866811",
-            "_v": 1607868078154
+            "inode": "562949954486403",
+            "_v": 1607872678892
         },
         {
             "id": "705094a7-f5a4-413f-8e09-2753c1d483e8",
@@ -9095,8 +9143,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "present.png",
-            "inode": "3940649674156156",
-            "_v": 1607868078154
+            "inode": "562949954486404",
+            "_v": 1607872678892
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -9104,8 +9152,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "static.png",
-            "inode": "4222124650866813",
-            "_v": 1607868078154
+            "inode": "562949954486348",
+            "_v": 1607872678892
         },
         {
             "id": "bb57ca3a-9209-4dff-938c-d543ebd57d87",
@@ -9113,8 +9161,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "t1.png",
-            "inode": "7599824371409232",
-            "_v": 1607868078154
+            "inode": "562949954486481",
+            "_v": 1607872678892
         },
         {
             "id": "83a9cd01-b0fb-4197-b5a3-a6a77166a739",
@@ -9122,8 +9170,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "t2.png",
-            "inode": "4785074604302675",
-            "_v": 1607868078154
+            "inode": "562949954486482",
+            "_v": 1607872678892
         },
         {
             "id": "55a6e6dc-a52d-49c2-bae7-3b0f9f9c449d",
@@ -9131,8 +9179,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "t3.png",
-            "inode": "17451448556282184",
-            "_v": 1607868078154
+            "inode": "562949954486483",
+            "_v": 1607872678892
         },
         {
             "id": "c4351d08-15b7-49e3-9db3-321d34badfbc",
@@ -9140,8 +9188,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "yule-coin.png",
-            "inode": "4503599627577470",
-            "_v": 1607868078155
+            "inode": "562949954486402",
+            "_v": 1607872678892
         }
     ],
     "palettes": [
@@ -10941,11 +10989,31 @@
             "name": "template",
             "filename": "template.mod",
             "settings": {},
-            "inode": "3940649674156150",
-            "_v": 1607868078144
+            "inode": "562949954486344",
+            "_v": 1607872678877
         }
     ],
     "variables": [
+        {
+            "id": "0",
+            "name": "puzzlevictory1"
+        },
+        {
+            "id": "1",
+            "name": "puzzlevictory2"
+        },
+        {
+            "id": "2",
+            "name": "currentreindeerscore"
+        },
+        {
+            "id": "3",
+            "name": "highreindeerscore"
+        },
+        {
+            "id": "4",
+            "name": "gameoverrein"
+        },
         {
             "id": "f0a0c10d-b0d3-4ca8-800b-69f59b27ee5f__L0",
             "name": "launchReindeer"
@@ -10997,26 +11065,6 @@
         {
             "id": "6daa7389-c47f-4f79-a2c8-c60a1db28e2e__L3",
             "name": "correctSpot"
-        },
-        {
-            "id": "0",
-            "name": "puzzlevictory1"
-        },
-        {
-            "id": "1",
-            "name": "puzzlevictory2"
-        },
-        {
-            "id": "2",
-            "name": "currentreindeerscore"
-        },
-        {
-            "id": "3",
-            "name": "highreindeerscore"
-        },
-        {
-            "id": "4",
-            "name": "gameoverrein"
         }
     ],
     "engineFieldValues": [
@@ -11035,8 +11083,8 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 186.6666717529297,
-        "worldScrollY": 438.6666564941406,
+        "worldScrollX": 185,
+        "worldScrollY": 6,
         "zoom": 175,
         "customColorsEnabled": true,
         "customHead": "",
@@ -11052,9 +11100,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            341,
-            128,
-            128
+            546,
+            205,
+            205
         ],
         "showNavigator": true,
         "defaultFadeStyle": "white",
