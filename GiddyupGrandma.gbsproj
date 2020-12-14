@@ -6264,7 +6264,7 @@
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 3,
-                    "paletteId": "",
+                    "paletteId": "62979b1f-7268-4dfe-9378-697639db86fe",
                     "isPinned": false,
                     "collisionGroup": "",
                     "script": [
@@ -6335,8 +6335,8 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "b9d8e8df-f5f3-4760-8343-150723110680",
-                    "x": 6,
-                    "y": 7
+                    "x": 12,
+                    "y": 11
                 },
                 {
                     "name": "",
@@ -6347,7 +6347,7 @@
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 3,
-                    "paletteId": "",
+                    "paletteId": "62979b1f-7268-4dfe-9378-697639db86fe",
                     "isPinned": false,
                     "collisionGroup": "",
                     "script": [
@@ -6418,7 +6418,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "3f91aee4-0f38-47df-861f-52e46c4f77d9",
-                    "x": 4,
+                    "x": 14,
                     "y": 7
                 },
                 {
@@ -6430,7 +6430,7 @@
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 3,
-                    "paletteId": "",
+                    "paletteId": "62979b1f-7268-4dfe-9378-697639db86fe",
                     "isPinned": false,
                     "collisionGroup": "",
                     "script": [
@@ -6501,7 +6501,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "ed708555-0fa7-4f05-8fd9-48b760d42a76",
-                    "x": 6,
+                    "x": 16,
                     "y": 9
                 },
                 {
@@ -6513,7 +6513,7 @@
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 3,
-                    "paletteId": "",
+                    "paletteId": "62979b1f-7268-4dfe-9378-697639db86fe",
                     "isPinned": false,
                     "collisionGroup": "",
                     "script": [
@@ -6584,8 +6584,8 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "14e5b6af-f50e-492c-868a-1adf789bf1e5",
-                    "x": 4,
-                    "y": 11
+                    "x": 16,
+                    "y": 7
                 },
                 {
                     "name": "",
@@ -6596,7 +6596,7 @@
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 3,
-                    "paletteId": "",
+                    "paletteId": "62979b1f-7268-4dfe-9378-697639db86fe",
                     "isPinned": false,
                     "collisionGroup": "",
                     "script": [
@@ -6667,7 +6667,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "73f3196c-e815-428b-9d65-f98a34d35774",
-                    "x": 2,
+                    "x": 12,
                     "y": 9
                 },
                 {
@@ -6679,7 +6679,7 @@
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 3,
-                    "paletteId": "",
+                    "paletteId": "62979b1f-7268-4dfe-9378-697639db86fe",
                     "isPinned": false,
                     "script": [
                         {
@@ -6750,7 +6750,7 @@
                             "command": "EVENT_IF_ACTOR_AT_POSITION",
                             "args": {
                                 "actorId": "$self$",
-                                "x": 6,
+                                "x": 16,
                                 "y": 9,
                                 "__collapseElse": false
                             },
@@ -6761,7 +6761,7 @@
                                         "command": "EVENT_IF_ACTOR_AT_POSITION",
                                         "args": {
                                             "actorId": "b9d8e8df-f5f3-4760-8343-150723110680",
-                                            "x": 2,
+                                            "x": 12,
                                             "y": 7,
                                             "__collapseElse": false
                                         },
@@ -6772,7 +6772,7 @@
                                                     "command": "EVENT_IF_ACTOR_AT_POSITION",
                                                     "args": {
                                                         "actorId": "3f91aee4-0f38-47df-861f-52e46c4f77d9",
-                                                        "x": 4,
+                                                        "x": 14,
                                                         "y": 7,
                                                         "__collapseElse": false
                                                     },
@@ -6783,7 +6783,7 @@
                                                                 "command": "EVENT_IF_ACTOR_AT_POSITION",
                                                                 "args": {
                                                                     "actorId": "ed708555-0fa7-4f05-8fd9-48b760d42a76",
-                                                                    "x": 6,
+                                                                    "x": 16,
                                                                     "y": 7,
                                                                     "__collapseElse": false
                                                                 },
@@ -6794,7 +6794,7 @@
                                                                             "command": "EVENT_IF_ACTOR_AT_POSITION",
                                                                             "args": {
                                                                                 "actorId": "14e5b6af-f50e-492c-868a-1adf789bf1e5",
-                                                                                "x": 2,
+                                                                                "x": 12,
                                                                                 "y": 9,
                                                                                 "__collapseElse": false
                                                                             },
@@ -6805,7 +6805,7 @@
                                                                                         "command": "EVENT_IF_ACTOR_AT_POSITION",
                                                                                         "args": {
                                                                                             "actorId": "73f3196c-e815-428b-9d65-f98a34d35774",
-                                                                                            "x": 4,
+                                                                                            "x": 14,
                                                                                             "y": 9,
                                                                                             "__collapseElse": false
                                                                                         },
@@ -6816,7 +6816,7 @@
                                                                                                     "command": "EVENT_IF_ACTOR_AT_POSITION",
                                                                                                     "args": {
                                                                                                         "actorId": "38c721ed-949b-4f05-9232-96d86a957508",
-                                                                                                        "x": 2,
+                                                                                                        "x": 12,
                                                                                                         "y": 11,
                                                                                                         "__collapseElse": false
                                                                                                     },
@@ -6827,7 +6827,7 @@
                                                                                                                 "command": "EVENT_IF_ACTOR_AT_POSITION",
                                                                                                                 "args": {
                                                                                                                     "actorId": "cfd2546a-4847-45ac-ac56-a6ee44bc4c85",
-                                                                                                                    "x": 4,
+                                                                                                                    "x": 14,
                                                                                                                     "y": 11,
                                                                                                                     "__collapseElse": false
                                                                                                                 },
@@ -6996,7 +6996,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "6daa7389-c47f-4f79-a2c8-c60a1db28e2e",
-                    "x": 2,
+                    "x": 12,
                     "y": 7
                 },
                 {
@@ -7008,7 +7008,7 @@
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 3,
-                    "paletteId": "",
+                    "paletteId": "62979b1f-7268-4dfe-9378-697639db86fe",
                     "isPinned": false,
                     "collisionGroup": "",
                     "script": [
@@ -7079,7 +7079,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "38c721ed-949b-4f05-9232-96d86a957508",
-                    "x": 2,
+                    "x": 14,
                     "y": 11
                 },
                 {
@@ -7091,7 +7091,7 @@
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 3,
-                    "paletteId": "",
+                    "paletteId": "62979b1f-7268-4dfe-9378-697639db86fe",
                     "isPinned": false,
                     "collisionGroup": "",
                     "script": [
@@ -7162,7 +7162,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "cfd2546a-4847-45ac-ac56-a6ee44bc4c85",
-                    "x": 6,
+                    "x": 16,
                     "y": 11
                 },
                 {
@@ -7184,7 +7184,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "baae5a99-9ad4-4ed3-a7f2-fd4dc92d313d",
-                    "x": 4,
+                    "x": 14,
                     "y": 9
                 }
             ],
@@ -11062,6 +11062,16 @@
                 "509878",
                 "E8E8F8"
             ]
+        },
+        {
+            "id": "62979b1f-7268-4dfe-9378-697639db86fe",
+            "name": "Palette 15",
+            "colors": [
+                "F8F8F8",
+                "F8E888",
+                "F8E888",
+                "E81818"
+            ]
         }
     ],
     "customEvents": [
@@ -12823,9 +12833,9 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 191,
-        "worldScrollY": 0,
-        "zoom": 175,
+        "worldScrollX": 1002,
+        "worldScrollY": 1003,
+        "zoom": 325,
         "customColorsEnabled": true,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
