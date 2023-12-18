@@ -1,2 +1,2 @@
-# grandma-reindeer
- A Frogger style holiday game where you help Grandma get across the street.
+# Holiday Jam Arcade
+ A series of arcade style classics rendered in GB Studio for the holidays.
